@@ -15,7 +15,7 @@ const Header = () => {
 	return (
 		<>
 			<nav className={styles.Nav}>
-				<Image src={menu} alt="menu" className={styles.menu} />
+				<img src={menu.src} alt="menu" className={styles.menu} />
 				<div className={styles['navbar-left']}>
 					<Link href="/" passHref>
 						<Image src={logo} alt="logo" className={styles['nav-logo']} />
@@ -45,16 +45,14 @@ const Header = () => {
 					<ul>
 						<li
 							className={styles['more-clickable-area'], styles['navbar-email'], styles.pointer}
-							onClick={() => { }}
-							onKeyPress={() => toggleMenu()}
+							onClick={() => toggleMenu()}
 							aria-hidden="true"
 						>
 							platzi@example.com
 						</li>
 						<li
-							className={styles.['navbar-shopping-cart']}
-							onClick={() => { }}
-							onKeyPress={toggleOrder()}
+							className={styles['navbar-shopping-cart']}
+							onClick={() => toggleOrder()}
 							aria-hidden="true"
 						>
 							<Image className={styles['more-clickable-area'], styles.pointer} src={shoppingCart} alt="shopping cart" />
