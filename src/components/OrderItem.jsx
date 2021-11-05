@@ -9,7 +9,7 @@ const OrderItem = ({ product }) => {
 
 	const handleRemove = product => {
 		removeFromCart(product);
-	}
+	};
 
 	return (
 		<div className={styles.OrderItem}>
@@ -21,6 +21,6 @@ const OrderItem = ({ product }) => {
 			<Image className={styles.pointer, styles['more-clickable-area']} src={close} alt="close" onClick={() => handleRemove(product)} />
 		</div>
 	);
-}
+};
 
 export default OrderItem;
