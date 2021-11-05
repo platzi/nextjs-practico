@@ -7,12 +7,14 @@ class MyDocument extends Document {
         <Head>
           <title>React Shop</title>
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN80WG7H93"></script>
-          <script dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-ZN80WG7H93');`
-          }} />
+            gtag('config', 'G-ZN80WG7H93');`,
+            }}
+          />
         </Head>
         <body>
           <Main />
@@ -21,6 +23,6 @@ class MyDocument extends Document {
       </Html>
     );
   }
-};
+}
 
 export default MyDocument;
